@@ -1,1 +1,1 @@
-# ecological_footprint_survey
+# ecological footprint survey
