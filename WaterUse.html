@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="bootstrapWaterUse.css">
+
+    <title>Home</title>
+</head>
+
+<!--<header>
+        <img src="gallery/footPrint.jpg">
+    </header>-->
+<!--Navigation Begins-->
+<div class="navBar">
+    <div class="listwrap">
+        <ul>
+            <li>
+                <a href="indexHome.html">Home</a>
+            </li>
+            <li>
+                <a href="backgroundQuestTatiana.html">Background Questionnaire</a>
+            </li>
+            <li>
+                <a href="WaterUse.html">Tasks</a>
+            </li>
+            <li>
+                <a href="Footprintcalculator.html">Footprint Calculator</a>
+            </li>
+            <li>
+                <a href="contactme.html">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--Navigation Ends Here-->
+<!--Begin Body-->
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <h1 id="title" class="text-center"><b>Water Use</b></h1>
+
+            <p id="description" class="description text-center">In this section, you will see 7 multiple-choice
+                questions that require you to choose one option for each question. <br>Please choose the one that best
+                answers for your case.
+            </p>
+
+        </header>
+   
+
+    <form id="survey-form" method="post" action="./submitData">
+
+        <div class="form-group">
+        <p>1. My shower (or bath) on a typical day is:</p>
+        <select name="shower" id="shower" required="required">
+
+            <option value="Noshower">No shower / no bath</option>
+            <option value="1-2minuteslong">1–2 minutes long / one-fourth full tub</option>
+            <option value="3-6minuteslong">3–6 minutes long / half full tub</option>
+            <option value="10ormoreminuteslong">10 or more minutes long / full tub</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>2. I flush the toilet:</p>
+        <select name="flush" id="flush" required="required">
+            <option value="everytime">Every time I use it</option>
+            <option value="Sometimes">Sometimes</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>3.  When I brush my teeth:</p>
+        <select name="brush" id="brush" required="required">
+            <option value="letwaterrun">I let the water run.</option>
+            <option value="don'tletwaterrun">I don't let the water run.</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>4.	I washed the car or watered the lawn today:</p>
+        <select name="wash" id="wash" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>5.	I use water-saving toilets (6-9 liters/flush)</p>
+        <select name="savingtoilets" id="savingtoilets" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>6. I use low-flow showerheads.</p>
+        <select name="showerheads" id="showerheads" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+        <p>7. I use a dishwasher on a typical day.</p>
+        <select name="dishwasher" id="dishwasher" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit and continue
+            </button>
+        </div>
+
+    </form>
+
+
+</div>
+
+    <script src="bootstrapTatiana.min.js"></script>
+
+
+</body>
+
+</html>
