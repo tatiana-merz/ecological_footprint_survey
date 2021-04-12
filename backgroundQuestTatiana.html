@@ -23,8 +23,8 @@
         <p id="description" class="description text-center">Every individual can have a different life style; and as a result, it can affect the environment and the world we are living in. The aim of the study is to see how individuals' life styles can affect the ecology concerning the size of the ecological footprint and to see whether this rate of footprint size differs across the genders or not
         </p>
     </header>
-
-    <form id="survey-form" method="post" action="./submitData"> <!--action="./submitData"-->
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+    <form id="survey-form" method="post" action="./submitData" target="dummyframe"> <!--action="./submitData"-->
 
         <div class="form-group">
             <label id="name-label" for="name">Name</label>
@@ -83,17 +83,23 @@
 
 
         <div class="form-group">
-            <button type="continue" id="continue" name="continue" value="continue" class="submit-button">
-                <a href="WaterUse.html">Submit and continue</a>
+
+            <button type="continue" id="continue" name="continue" value="continue" class="submit-button" onClick="redir()">
+                Submit and continue</a>
             </button>
         </div>
 
+    
     </form>
 
 </div>
 
 <script src="bootstrapTatiana.min.js"></script>
-
+<script>
+    function redir() {
+      window.location.href="WaterUse.html";
+    }
+  </script>
 
 </body>
 
