@@ -20,22 +20,12 @@ http.createServer(function (req, res) {
 console.log(`Server running at port ${port}...\nPress CTRL+C to stop.`);
 
 function handleGetRequest(req, res) {
-    // //handle GET form submission
-    // if(req.url.startsWith('/submitData')) {
-    //     const requestURL = new URL(req.url, `http://localhost:${port}`);
-    //     console.log(requestURL.searchParams);
-    //     sendSuccessResponse(res);
-    //     return;
-    // }
-
-    //check if file exists
     fs.stat(`.${req.url}`, function (err, stat) {
 
         if (err == null) {
-            //file exists
             if (req.url === '/') {
                 res.writeHead(200, { 'Content-Type': 'text/html; charset=UTF-8' });
-                fs.createReadStream('backgroundQuestTatiana.html', 'UTF-8').pipe(res);
+                fs.createReadStream('indexHome.html', 'UTF-8').pipe(res);
                 return
             }
 
@@ -50,7 +40,6 @@ function handleGetRequest(req, res) {
             fs.createReadStream(`.${req.url}`, "UTF-8").pipe(res);
 
         } else if (err.code === 'ENOENT') {
-            //file doesn't exist 
             response404(res);
 
         } else {
@@ -62,51 +51,46 @@ function handleGetRequest(req, res) {
 }
 
 function handlePostRequest(req, res) {
-    //only handles request to /submitData
     if (req.url !== "/submitData") {
         response404(res);
     } else {
-        //get data from submitted form
         let requestBody = '';
         req.on("data", function (data) {
             requestBody += data;
         });
 
-        //when all read, parse the data string to get form fields data
         req.on("end", function () {
             console.log(`requestBody: ${requestBody}\n`);
             let formData = querystring.parse(requestBody);
+
             console.log('formData:');
             console.log(formData);
 
-            //save the submitted data to csv format
             writeToCsv(formData);
-            
+
         })
 
-        //send form submitted response
         sendSuccessResponse(res);
-        
+
     }
 }
 
 function writeToCsv(formData) {
     let dataString = `${formData.name}\t\
-    ${formData.email}\t\
-    ${formData.number}\t\
-    ${formData.role}\t\
-    ${formData.comments}\t\
-    
-    ${formData.shower}\t\
-    ${formData.flush}\t\
-    ${formData.brush}\t\
-    ${formData.wash}\t\
-    ${formData.savingtoilets}\t\
-    ${formData.showerheads}\t\
-    ${formData.dishwasher}\t\n`;
+       ${formData.number}\t\
+       ${formData.email}\t\
+       ${formData.role}\t\
+       ${formData.comments}\t\
+       ${formData.shower}\t\
+       ${formData.flush}\t\
+       ${formData.brush}\t\
+       ${formData.wash}\t\
+       ${formData.savingtoilets}\t\
+       ${formData.showerheads}\t\
+       ${formData.dishwasher}\t\
+       ${formData.tests}\t\n`;
 
     fs.appendFileSync('data/responses.csv', dataString);
-
 }
 
 function sendSuccessResponse(res) {
@@ -118,5 +102,3 @@ function response404(res) {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=UTF-8' });
     res.end("File not found!");
 }
-
-
