@@ -1,1 +1,2 @@
-# ecological footprint survey
+# Ecological Footprint Survey
+## Steps to Use the Platform
