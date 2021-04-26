@@ -1,11 +1,27 @@
 # Introduction to Ecological Footprint Survey
-This project aims to study how big the footprint size of the Eberhard Karls University of Tübingen students is. We chose gender as an independent variable. Thus, our research question is: does ecological footprint size differ across gender in the setting of University of Tübingen? We assume a null hypothesis for this research question. The study is conducted through a survey which has multiple choice and check-box types of questions. There 7 sections in the survey which are titled as ***Water Use, Food, Transportation, Shelter, Energy Use, Clothing, Stuff and Fun*** respectively. These sections ease the participants to see on what kind of topics their ecological footprint size is calculated, and how their routines lead to their overall footprint size.
+This project aims to study how big the footprint size of the Eberhard Karls University of Tübingen students is. We chose gender as an independent variable. Thus, our research question is: does ecological footprint size differ across gender in the setting of University of Tübingen? We assume a null hypothesis for this research question. The study is conducted through a survey which has multiple choice and check-box types of questions. There 7 sections in the survey which are titled as **Water Use, Food, Transportation, Shelter, Energy Use, Clothing, Stuff and Fun** respectively. These sections ease the participants to see on what kind of topics their ecological footprint size is calculated, and how their routines lead to their overall footprint size.
 
 In the following part, we walk you through the use of the web application for the data collection, which is conducted via the metric, survey.
 ## Steps to Use the Platform
-First of all, the participants should go to [this link](http://18.185.61.4:portNum) to go to our web application, Clicking on this link you will be directed to our **Home** page where you will see a short description of the project under the **Goal** and **Method** headings. To inform yourself, you can read the paragraphs here in this homepage.
+First of all, the participants should go to [this link](http://18.185.61.4:portNum) to go to our web application, Clicking on this link you will be directed to our **Home** page where you can acknowledge yourself about the project under **Information and Purpose** and **Course of Study** headings. This home page also includes information about your consent to participate in the study under the headings **Confidentiality and handling of data** and **Voluntary Participation**. If you are volunteer to take the study, click on the word **here** which is provided under the **Voluntary Participation**.
 
-Meanwhile, you can see the side-bar menu for the navigation bar which has **Home** and **Footprint Survey** tabs. As stated above, the homepage is where we explain the project, and if you want to give a start to the survey, you can click on the **Footprint Survey**. When you click on it, you will be on the **Background Questionnaire** section, and here we ask you to answer the questions we need.
+After clicking, you will be directed to **Footprint Survey** where you are supposed to answer the background questions. After you respond to these questions, please click on the **Next** button via which you will be starting with the actual survey. Here you will be answering questions related to **Water Use**. You choose between the options via the drop-down section for the answers of yours. You can choose only one option as the questions in this section are multiple-choice type.
+
+Finished with **Water Use** section? Please click on **Next**. Now you will find yourself on the **Food Consumption** section, and compared to the previous section, you will see check-box type question in addtion to multiple-choice questions. After you answer all the questions, you can proceed to the following section again by clicking on **Next**. Notice also that there is a button called **Prev** on the left-handside. This button will be in the other sections of the survey as well so that you can go to the previous section when you want to change something before submitting the survey.
+
+The third section will be related to **Transportation**, and like in the second section, here there are also check-box and multiple-choice questions. After answering the questions, click on **Next** and then you will be asked to answer the questions about **Shelter** which is the fourth section. All the questions here are multiple-choice type. When done here, please click on **Next**.
+
+In the fifth section, you will see that we want you to respond to the questions that are in relation to **Energy Use** and again MC type. When done, click on **Next**.
+
+The sixth section is **Clothing**. Please answer all the questions here which are all MC type. Click on **Next** to proceed. Then you will be in the **Use of Stuff** section, and here again we provide MC type questions. When you complete this section, please click on **Next**.
+
+Finally, you will be in the last section of the survey, and in this final section, we ask you to answer the questions under the title **Fun**. All the questions are MC type here as well. However, notice that there will be still the button, **Next**. Please click on this button after you have completed the questions in this section.
+
+You will be directed to another page where you will see the thanking message, and then you can click on **Submit** button. If there is anything you want to change in your data, you can always go back to the previous sections via the **Prev** button.
+
+Notice that, on the top of the page, you will always see the navigation bar which are **Home Footprint, Survey, Feedback** and **Contact Us**. 
+
+
 
 ```bash
 
