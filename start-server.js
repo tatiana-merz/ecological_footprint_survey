@@ -88,6 +88,17 @@ function writeToCsv(formData) {
        ${formData.savingtoilets}\t\
        ${formData.showerheads}\t\
        ${formData.dishwasher}\t\
+
+       ${formData.beef}\t\
+       ${formData.chicken}\t\
+       ${formData.wildfish}\t\
+       ${formData.eggs}\t\
+       ${formData.milk_dairy}\t\
+       ${formData.fruit}\t\
+       ${formData.vegetables}\t\
+       ${formData.grains}\t\
+       ${formData.food_grown_locally}\t\
+
        ${formData.tests}\t\n`;
 
     fs.appendFileSync('data/responses.csv', dataString);
