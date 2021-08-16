@@ -1,857 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap.css">
-  <title>Ecological survey</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Ecological Footprint Survey</title>
+
 </head>
 
 <div class="navBar">
-    <div class="listwrap">
-        <ul>
-            <li>
-                <a href="indexHome.html">Home</a>
-            </li>
-            <li>
-                <a href="index.html">Background Questionnaire</a>
-          </li>
-            <li>
-                <a href="Footprintcalculator.html">Footprint Calculator</a>
-            </li>
-            <li>
-                <a href="contactme.html">Contact Me</a>
-            </li>
-        </ul>
-    </div>
+  <div class="listwrap">
+    <ul>
+      <li>
+        <a href="indexHome.html">Home</a>
+      </li>
+      <li>
+        <a href="index.html">Footprint Survey</a>
+      </li>
+      <li>
+        <a href="Feedback.html">Feedback</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      
+    </ul>
+  </div>
 </div>
 
 <body>
 
-<header class="header">
 
-    <h1 id="title" class="text-center">Background Questionnaire</h1>
 
-    <p id="description" class="description text-center">Every individual can have a different life style; and as a result, it can affect the environment and the world we are living in. The aim of the study is to see how individuals' life styles can affect the ecology concerning the size of the ecological footprint and to see whether this rate of footprint size differs across the genders or not
-    </p>
-</header>
+  <header class="header">
+    <h1 id="title" class="text-center">Footprint Survey</h1>
+    <p id="description" class="description text-center"><b>Kindly fill out the form with the correct information and
+        then proceed
+      </b></p>
+  </header>
 
-<section>
+
+  <section>
     <div class="container">
 
-        <form id="survey-form" method="post" action="./submitData">
+      <form id="survey-form" method="post" action="./submitData">
 
-            <div class="step step-1 active">
-                <div class="form-group">
-                    <label id="name-label" for="name">Name</label>
-                    <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            class="form-control"
-                            placeholder="Enter your name"
-                            required/>
-                </div>
+        <div class="step step-1 active">
+          <h1 id="title" class="text-center"><b>Background Questionnaire</b></h1>
 
-                <div class="form-group">
-                    <label id="number-label" for="number">Age</label>
-                    <input
-                            type="number"
-                            name="number"
-                            id="number"
-                            min="10"
-                            max="99"
-                            class="form-control"
-                            placeholder="Age"
-                            required/>
-                </div>
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="required" />
+          </div>
 
-                <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            class="form-control"
-                            placeholder="Enter your Email"
-                            required/>
-                </div>
+          <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="Age"
+            required="required"/>
+          </div>
 
-                <div class="form-group">
-                    <p>Which option best describes your current role?</p>
-                    <select id="dropdown" name="role" class="form-control" required>
-                        <option disabled selected value>Select current role</option>
-                        <option value="student">Student</option>
-                        <option value="full time job">Full Time Job</option>
-                        <option value="part time job">Part Time Job</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+          <div class="form-group">
+            <label for="gender" required="required">Gender</label>
+            <select name="Gender" id="Gender" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
 
-                <div class="form-group">
-                    <p>Any comments or suggestions?</p>
-                    <textarea
-                            id="comments"
-                            class="input-textarea"
-                            name="comments"
-                            placeholder="Enter your comment here...">
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="required" />
+          </div>
+
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required="required">
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="full time job">Full Time Job</option>
+              <option value="part time job">Part Time Job</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!--Hide
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here...">
                     </textarea>
-                </div>
+          </div>
+          -->
 
-                <button type="button" class="next-btn">Next</button>
-            </div>
-
-            <div class="step step-2">
-              
-              <div class="navBar">
-                <div class="listwrap">
-              <ul>
-                <li>
-                  <a href="indexHome.html">Home</a>
-                </li> 
-                <li>
-                  <a href="index.html">Background Questionnaire</a>
-                </li> 
-                <li>
-                  <a href="Footprintcalculator.html">Footprint Calculator</a>
-                </li>
-                <li>
-                  <a href="contactme.html">Contact Me</a>
-                </li>
-              </ul>
-              </div>
-              </div>
-              
-              <h1 id="title" class="text-center"><b>Water Use</b></h1>
-            <p id="description" class="description text-center">In this section, you will see 7 multiple-choice
-                questions that require you to choose one option for each question. <br>Please choose the one that best
-                suits your case.
-            </p>
-                <div class="form-group">
-
-                    <p>1. My shower (or bath) on a typical day is:</p>
-                    <select name="shower" id="shower" class="form-control" required="required">
-                        <option value="Noshower">No shower / no bath</option>
-                        <option value="1-2minuteslong">1–2 minutes long / one-fourth full tub</option>
-                        <option value="3-6minuteslong">3–6 minutes long / half full tub</option>
-                        <option value="10ormoreminuteslong">10 or more minutes long / full tub</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>2. I flush the toilet:</p>
-                    <select name="flush" id="flush" class="form-control" required="required">
-                        <option value="everytime">Every time I use it</option>
-                        <option value="Sometimes">Sometimes</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>3.  When I brush my teeth:</p>
-                    <select name="brush" id="brush" class="form-control"
-                            required="required">
-                        <option value="let water run">I let the water run.</option>
-                        <option value="don't let water run">I don't let the water run.</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>4.	I washed the car or watered the lawn today:</p>
-                    <select name="wash" id="wash" class="form-control" required="required">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>5.	I use water-saving toilets (6-9 liters/flush)</p>
-                    <select name="savingtoilets" id="savingtoilets" class="form-control" required="required">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>6. I use low-flow showerheads.</p>
-                    <select name="showerheads" id="showerheads" class="form-control" required="required">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <p>7. I use a dishwasher on a typical day.</p>
-                    <select name="dishwasher" id="dishwasher" class="form-control" required="required">
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-
-
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="button" class="next-btn">Next</button>
-            </div>
-
-            <div class="step step-3">
-
-                <div class="form-group">
-                    <label for="tests">test</label>
-                    <input type="text" id="tests" class="form-control" name="tests">
-                </div>
-
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-                  <div class="step step-4">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexhome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-
-                 <h1 id="title" class="text-center"><b>Food Consumption</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 7 questions
-                regarding the food consumption.
-                <br>Please choose the option that best fits your case for the multiple questions.
-                <br>*For the checkbox type questions, you can choose more than one option.
-            </p>
-                <div class="form-group">               
-                  <p>1. On a typical day, I eat:</p>
-                    <input type="checkbox" name="beef" value="daily meal 1"> Beef <br>
-                    <input type="checkbox" name="chicken" value="daily meal 2"> Chicken <br>
-                    <input type="checkbox" name="wildfish" value="daily meal 3">Wild fish<br>
-                    <input type="checkbox" name="eggs" value="daily meal 4">Eggs<br>
-                    <input type="checkbox" name="milk/dairy" value="daily meal 5">Milk/dairy<br>
-                    <input type="checkbox" name="fruit" value="daily meal 6">Fruit<br>
-                    <input type="checkbox" name="vegetables" value="daily meal 7">Vegetables<br>
-                    <input type="checkbox" name="Grains: bread, cereal, rice" value="daily meal 8">Grains: bread, cereal, rice<br>
-                </div>
-            
-            <div class="form-group">
-                    <p>2. ____ of my food is grown locally.</p>
-                    <select name="food grown locally" id="food grown locally" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="all">All</option>
-                        <option value="some">Some</option>
-                        <option value="none">None</option>
-                    </select>
-            </div>
-            
-             <div class="form-group">
-                    <p>3.	____ of my food is organic.</p>
-                    <select name="organic" id="organic" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="all">All</option>
-                        <option value="some">Some</option>
-                        <option value="none">None</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>4.	I compost my fruit/vegetable scraps and peels.</p>
-                    <select name="compost fruit/vegetable" id="compost fruit/vegetable" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>5.	____ of my food is processed.</p>
-                    <select name="water-saving toilets" id="water-saving toilets" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="all">All</option>
-                        <option value="some">Some</option>
-                        <option value="none">None</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>6.	____ of my food has packaging.</p>
-                    <select name="packaging" id="packaging" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="all">All</option>
-                        <option value="some">Some</option>
-                        <option value="none">None</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>7. On a typical day, I waste:</p>
-                    <select name="foodwaste" id="foodwaste" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="none of my food">None of my food</option>
-                        <option value="one-fourth of my food">One-fourth of my food</option>
-                        <option value="one-third of my food">One-third of my food</option>
-                        <option value="half of my food">Half of my food</option>
-                    </select>
-                </div>
-
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-          <div class="step step-5">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexhome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-            <h1 id="title" class="text-center"><b>Transportation</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 6 questions regarding transportation. 
-                <br>Please choose the option that best fits your case for the multiple questions.
-                <br>*For the checkbox type questions, you can choose more than one option.
-            </p>
-     
-                <div class="form-group">
-                   <p>1. On a typical day, I travel by:</p>
-                    <input type="checkbox" name="foot" value="daily transport 1"> Foot <br>
-                    <input type="checkbox" name="bike" value="daily transport 2"> Bike <br>
-                    <input type="checkbox" name="public transit" value="daily transport 3">Public transit<br>
-                    <input type="checkbox" name="private vehicle" value="daily transport 4">Private vehicle<br>
-                </div>
-            
-            <div class="form-group">
-                    <p>2.  Our vehicle’s fuel efficiency is ____ liters/100 kilometers(gallons/60 miles).</p>
-                    <select name="fuel efficiency" id="fuel efficiency" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="less than 6 liters / 2 gallons">less than 6 liters / 2 gallons</option>
-                        <option value="6–9 liters / 2–2½ gallons">6–9 liters / 2–2½ gallons</option>
-                        <option value="10–13 liters / 3–3½ gallons">10–13 liters / 3–3½ gallons</option>
-                        <option value="More than 13 liters / 3½ gallons">6–9 liters / 2–2½ gallons</option>
-                        <option value="Not applicable">Not applicable</option>
-                    </select>
-            </div>
-            
-            <div class="form-group">
-                    <p>3.	The time I spend in vehicles on a typical day is:</p>
-                    <select name="vehicle time" id="vehicle time" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="No time">No time</option>
-                        <option value="less than half an hour">Less than half an hour</option>
-                        <option value="Half an hour to 1 hour">Half an hour to 1 hour</option>
-                        <option value="More than 1 hour">More than 1 hour</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>4.	How big is the car in which I travel on a typical day?</p>
-                    <select name="size of car" id="size of car" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Nocar">No car</option>
-                        <option value="Small">Small</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Large(SUV)">Large (SUV)</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>5.	Number of cars in our driveway?</p>
-                    <select name="no of cars in the driveway" id="no of cars in the driveway" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="No car">No car</option>
-                        <option value="1 car">1 car</option>
-                        <option value="2 cars">2 cars</option>
-                        <option value="More than 2 cars (200)">More than 2 cars (200)</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                    <p>6.	On a typical day, I walk/run for:</p>
-                    <select name="daily walk/run" id="daily walk/run" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="5 hours or more">5 hours or more</option>
-                        <option value="3 to 5 hours">3 to 5 hours</option>
-                        <option value="1 to 3 hours">1 to 3 hours</option>
-                        <option value="Half an hour to 1 hour">Half an hour to 1 hour</option>
-                        <option value="Less than 10 minutes">Less than 10 minutes</option>
-                    </select>
-            </div>
-
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-
-          <div class="step step-6">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexhome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-            <h1 id="title" class="text-center"><b>Shelter</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 3 multiple-choice questions regarding shelter. 
-                <br>Please choose the option that fits best to your case. 
-
-                <div class="form-group">
-                  <p>1. Number of rooms per person (divide number of rooms by number of people living at home).</p>
-        <select name="rooms per person" id="rooms per person" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="Fewer than 2 rooms per person">Fewer than 2 rooms per person</option>
-            <option value="2 to 3 rooms per person">2 to 3 rooms per person</option>
-            <option value="4 to 6 rooms per person">4 to 6 rooms per person</option>
-            <option value="7 or more rooms per person">7 or more rooms per person</option>
-            <option value="Not applicable">Not applicable</option>
-        </select> 
-                </div>
-            
-             <div class="form-group">
-        <p>2. We share our home with nonfamily members.</p>
-        <select name="home-sharing" id="home-sharing" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-        </select>
+          <button type="button" class="next-btn">Next</button>
         </div>
 
-        <div class="form-group">
-        <p>3. We own a second, or vacation home that is often empty.</p>
-        <select name="second home" id="second home" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="We own / use it with others">We own/use it with others</option>
-        </select>
+        <div class="step step-2">
+
+          <h1 id="title" class="text-center"><b>Water Use</b></h1>
+
+          <div class="form-group">
+
+            <p>1. My shower (or bath) on a typical day is:</p>
+            <select name="shower" id="shower" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="No shower">No shower / no bath</option>
+              <option value="1-2 minuteslong">1–2 minutes long / one-fourth full tub</option>
+              <option value="3-6 minuteslong">3–6 minutes long / half full tub</option>
+              <option value="10 or more minutes long">10 or more minutes long / full tub</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>2. I flush the toilet:</p>
+            <select name="flush" id="flush" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="everytime">Every time I use it</option>
+              <option value="Sometimes">Sometimes</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. When I brush my teeth:</p>
+            <select name="brush" id="brush" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="let water run">I let the water run.</option>
+              <option value="don't let water run">I don't let the water run.</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>4. I washed the car or watered the lawn today:</p>
+            <select name="wash" id="wash" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>5. I use water-saving toilets (6-9 liters/flush)</p>
+            <select name="savingtoilets" id="savingtoilets" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>6. I use low-flow showerheads.</p>
+            <select name="showerheads" id="showerheads" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>7. I use a dishwasher on a typical day.</p>
+            <select name="dishwasher" id="dishwasher" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
         </div>
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-          <div class="step step-7">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexHome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-            <h1 id="title" class="text-center"><b>Energy Use</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 7  questions regarding energy use. 
-                <br>Please choose the option that fits best to your case for the multiple-choice. 
-              <br>For the checkbox type questions, you can choose more than one option. </p>
+        <div class="step step-3">
 
-                <div class="form-group">
-                   <p>1. In cold months, our house temperature is:</p>
-            <select name="temperature in cold months" id="temperature in cold months" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="Under 15ºC (59°F)">Under 15ºC (59°F)</option>
-                <option value="15 to 18ºC (59 to 64°F)">15 to 18ºC (59 to 64°F)</option>
-                <option value="19 to 22ºC (66 to 71°F)">19 to 22ºC (66 to 71°F)</option>
-                <option value="22°C (71°F) or more">22°C (71°F) or more</option>
-            </select> 
-                </div>
-            
-            <div class="form-group">
+          <h1 id="title" class="text-center"><b>Food Consumption</b></h1>
+
+          <div class="form-group">
+              <p>1. On a typical day, I eat:</p>
+              <input type="checkbox" name="beef" value="daily meal 1"> Beef <br>
+              <input type="checkbox" name="chicken" value="daily meal 2"> Chicken <br>
+              <input type="checkbox" name="wildfish" value="daily meal 3">Wild fish<br>
+              <input type="checkbox" name="eggs" value="daily meal 4">Eggs<br>
+              <input type="checkbox" name="milk/dairy" value="daily meal 5">Milk/dairy<br>
+              <input type="checkbox" name="fruit" value="daily meal 6">Fruit<br>
+              <input type="checkbox" name="vegetables" value="daily meal 7">Vegetables<br>
+              <input type="checkbox" name="Grains: bread, cereal, rice" value="daily meal 8">Grains: bread, cereal, rice<br>
+      </div>
+
+          <div class="form-group">
+            <p>2. ____ of my food is grown locally.</p>
+            <select name="food grown locally" id="food grown locally" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="all">All</option>
+              <option value="some">Some</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. ____ of my food is organic.</p>
+            <select name="organic" id="organic" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="all">All</option>
+              <option value="some">Some</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>4. I compost my fruit/vegetable scraps and peels.</p>
+            <select name="compost fruit/vegetable" id="compost fruit/vegetable" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>5. ____ of my food is processed.</p>
+            <select name="water-saving toilets" id="water-saving toilets" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="all">All</option>
+              <option value="some">Some</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>6. ____ of my food has packaging.</p>
+            <select name="packaging" id="packaging" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="all">All</option>
+              <option value="some">Some</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>7. On a typical day, I waste:</p>
+            <select name="foodwaste" id="foodwaste" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="none of my food">None of my food</option>
+              <option value="one-fourth of my food">One-fourth of my food</option>
+              <option value="one-third of my food">One-third of my food</option>
+              <option value="half of my food">Half of my food</option>
+            </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!--Food Consumption Ends Here-->
+        <div class="step step-4">
+
+          <h1 id="title" class="text-center"><b>Transportation</b></h1>
+
+          <div class="form-group">
+            <p>1. On a typical day, I travel by:</p>
+            <input type="checkbox" name="foot" value="daily transport 1"> Foot<br>
+            <input type="checkbox" name="bike" value="daily transport 2"> Bike<br>
+            <input type="checkbox" name="public transit" value="daily transport 3">Public transit<br>
+            <input type="checkbox" name="private vehicle" value="daily transport 4">Private vehicle<br>
+          </div>
+
+          <div class="form-group">
+            <p>2. Our vehicle’s fuel efficiency is ____ liters/100 kilometers(gallons/60 miles).</p>
+            <select name="fuel efficiency" id="fuel efficiency" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="less than 6 liters / 2 gallons">less than 6 liters / 2 gallons</option>
+              <option value="6–9 liters / 2–2½ gallons">6–9 liters / 2–2½ gallons</option>
+              <option value="10–13 liters / 3–3½ gallons">10–13 liters / 3–3½ gallons</option>
+              <option value="More than 13 liters / 3½ gallons">6–9 liters / 2–2½ gallons</option>
+              <option value="Not applicable">Not applicable</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. The time I spend in vehicles on a typical day is:</p>
+            <select name="vehicle time" id="vehicle time" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="No time">No time</option>
+              <option value="less than half an hour">Less than half an hour</option>
+              <option value="Half an hour to 1 hour">Half an hour to 1 hour</option>
+              <option value="More than 1 hour">More than 1 hour</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>4. How big is the car in which I travel on a typical day?</p>
+            <select name="size of car" id="size of car" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Nocar">No car</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large(SUV)">Large (SUV)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>5. Number of cars in our driveway?</p>
+            <select name="no of cars in the driveway" id="no of cars in the driveway" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="No car">No car</option>
+              <option value="1 car">1 car</option>
+              <option value="2 cars">2 cars</option>
+              <option value="More than 2 cars (200)">More than 2 cars (200)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>6. On a typical day, I walk/run for:</p>
+            <select name="daily walk/run" id="daily walk/run" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="5 hours or more">5 hours or more</option>
+              <option value="3 to 5 hours">3 to 5 hours</option>
+              <option value="1 to 3 hours">1 to 3 hours</option>
+              <option value="Half an hour to 1 hour">Half an hour to 1 hour</option>
+              <option value="Less than 10 minutes">Less than 10 minutes</option>
+            </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!--Transportation Task Ends Here-->
+
+        <div class="step step-5">
+
+          <h1 id="title" class="text-center"><b>Shelter</b></h1>
+
+          <div class="form-group">
+            <p>1. Number of rooms per person (divide number of rooms by number of people living at home).</p>
+            <select name="rooms per person" id="rooms per person" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Fewer than 2 rooms per person">Fewer than 2 rooms per person</option>
+              <option value="2 to 3 rooms per person">2 to 3 rooms per person</option>
+              <option value="4 to 6 rooms per person">4 to 6 rooms per person</option>
+              <option value="7 or more rooms per person">7 or more rooms per person</option>
+              <option value="Not applicable">Not applicable</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>2. We share our home with nonfamily members.</p>
+            <select name="home-sharing" id="home-sharing" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. We own a second, or vacation home that is often empty.</p>
+            <select name="second home" id="second home" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="We own / use it with others">We own/use it with others</option>
+            </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!--Shelter Task Ends Here-->
+
+        <div class="step step-6">
+
+          <h1 id="title" class="text-center"><b>Energy Use</b></h1>
+
+          <div class="form-group">
+            <p>1. In cold months, our house temperature is:</p>
+            <select name="temperature in cold months" id="temperature in cold months" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Under 15ºC (59°F)">Under 15ºC (59°F)</option>
+              <option value="15 to 18ºC (59 to 64°F)">15 to 18ºC (59 to 64°F)</option>
+              <option value="19 to 22ºC (66 to 71°F)">19 to 22ºC (66 to 71°F)</option>
+              <option value="22°C (71°F) or more">22°C (71°F) or more</option>
+            </select>
+          </div>
+
+          <div class="form-group">
             <p>2. We dry clothes outdoors or on an indoor rack.</p>
-            <select name="dry clothes" id="dry clothes" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="always">Always</option>
-                <option value="Sometimes">Sometimes</option>
-                <option value="Sometimes">Never</option>
+            <select name="dry clothes" id="dry clothes" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="always">Always</option>
+              <option value="Sometimes">Sometimes</option>
+              <option value="Sometimes">Never</option>
             </select>
-            </div>
+          </div>
 
-            <div class="form-group">
+          <div class="form-group">
             <p>3. We use an energy-efficient refrigerator.</p>
-            <select name="energy-efficient refrigerator" id="energy-efficient refrigerator" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="yes">Yes</option>
-                <option value="no">No</option>
-                <option value="not applicable">Not applicable</option>
+            <select name="energy-efficient refrigerator" id="energy-efficient refrigerator" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="not applicable">Not applicable</option>
             </select>
-            </div>
+          </div>
 
-            <div class="form-group">
+          <div class="form-group">
             <p>4. We use compact fluorescent light bulbs.</p>
-            <select name="fluorescent light bulbs" id="fluorescent light bulbs" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="not applicable">Not applicable</option>
+            <select name="fluorescent light bulbs" id="fluorescent light bulbs" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="not applicable">Not applicable</option>
             </select>
-        </div>
-        
-        <div class="form-group">
+          </div>
+
+          <div class="form-group">
             <p>5. I turn off lights, computer, and television when they’re not in use.</p>
-            <select name="turn off lights" id="turn off lights" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="not applicable">Not applicable</option>
+            <select name="turn off lights" id="turn off lights" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="not applicable">Not applicable</option>
             </select>
-        </div>
+          </div>
 
-        <div class="form-group">
+          <div class="form-group">
             <p>6. To cool off, I use:</p>
-            <select name="To cool off" id="To cool off" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="Airconditioning: car">Air conditioning: car</option>
-                <option value="Airconditioning: home">Air conditioning: home</option>
-                <option value="Electric fan">Electric fan</option>
-                <option value="nothing">Nothing</option>
+            <select name="To cool off" id="To cool off" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Airconditioning: car">Air conditioning: car</option>
+              <option value="Airconditioning: home">Air conditioning: home</option>
+              <option value="Electric fan">Electric fan</option>
+              <option value="nothing">Nothing</option>
             </select>
-        </div>
+          </div>
 
-        <div class="form-group">
+          <div class="form-group">
             <p>7. Outdoors today, I spent:</p>
-            <select name="outdoors" id="outdoors" required="required">
-                <option disabled selected value>Please Select</option>
-                <option value="7 hours">7 hours</option>
-                <option value="4 to 6 hours">4 to 6 hours</option>
-                <option value="4 to 6 hours">2 to 3 hours</option>
-                <option value="4 to 6 hours">2 hours or less</option>
+            <select name="outdoors" id="outdoors" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="7 hours">7 hours</option>
+              <option value="4 to 6 hours">4 to 6 hours</option>
+              <option value="4 to 6 hours">2 to 3 hours</option>
+              <option value="4 to 6 hours">2 hours or less</option>
             </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
         </div>
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-          <div class="step step-8">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexHome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-            <h1 id="title" class="text-center"><b>Clothing</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 8
-                multiple-choice questions regarding clothing.
-              <br>Please choose the option that suits best to your case.</p>
+        <!--Energy Use Task Ends Here-->
+        <!--Clothing Task Ends Here-->
 
-                <div class="form-group">
-                    <p>1. I change my outfit every day and put it in the laundry.</p>
-                    <select name="change of outfit" id="change of outfit" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-            </div>
+        <div class="step step-7">
 
-            <div class="form-group">
-                    <p>2. I am wearing clothes that have been mended or fixed. </p>
-                    <select name="mended or fixed clothes" id="mended or fixed clothes" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-            </div>
+          <h1 id="title" class="text-center"><b>Clothing</b></h1>
 
-            <div class="form-group">
-                    <p>3. One-fourth of my clothes are handmade or secondhand.</p>
-                    <select name="handmade or secondhand" id="handmade or secondhand" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-            </div>
+          <div class="form-group">
+            <p>1. I change my outfit every day and put it in the laundry.</p>
+            <select name="change of outfit" id="change of outfit" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-                    <p>4. Most of my clothes are purchased new each year.</p>
-                    <select name="purchased new each year" id="purchased new each year" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-            </div>
+          <div class="form-group">
+            <p>2. I am wearing clothes that have been mended or fixed. </p>
+            <select name="mended or fixed clothes" id="mended or fixed clothes" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-                    <p>5. I give the local thrift store clothes that I no longer wear.</p>
-                    <select name="give clothes out" id="give clothes out" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-            </div>
+          <div class="form-group">
+            <p>3. One-fourth of my clothes are handmade or secondhand.</p>
+            <select name="handmade or secondhand" id="handmade or secondhand" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-                    <p>6. I buy hemp instead of cotton shirts when I can.</p>
-                    <select name="buy hemp" id="buy hemp" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-            </div>
+          <div class="form-group">
+            <p>4. Most of my clothes are purchased new each year.</p>
+            <select name="purchased new each year" id="purchased new each year" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-                    <p>7. I never wear ___ % of the clothes in my cupboard.</p>
-                    <select name="clothes not worn" id="clothes not worn" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Less than 25%">Less than 25%</option>
-                        <option value="50%">50%</option>
-                        <option value="75%">75%</option>
-                        <option value="More than 75%">More than 75%</option>
-                    </select>
-            </div>
+          <div class="form-group">
+            <p>5. I give the local thrift store clothes that I no longer wear.</p>
+            <select name="give clothes out" id="give clothes out" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
 
-            <div class="form-group">
-                    <p>8.	I have ____ pair/pairs of shoes.</p>
-                    <select name="pairs of shoes" id="pairs of shoes" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="1">1</option>
-                        <option value="2 to 3">2 to 3</option>
-                        <option value="4 to 6">4 to 6</option>
-                        <option value="7 or more">7 or more</option>
-                        </select>
-                </div>
+          <div class="form-group">
+            <p>6. I buy hemp instead of cotton shirts when I can.</p>
+            <select name="buy hemp" id="buy hemp" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-          <div class="step step-9">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexHome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-             <h1 id="title" class="text-center"><b>Use of Stuff</b></h1>
-            <p id="description" class="description text-center">In this section of the survey, you will see 6 multiple questions regarding use of stuff.
-                <br>Please choose the option that suits best to your case.
-            </p>
+          <div class="form-group">
+            <p>7. I never wear ___ % of the clothes in my cupboard.</p>
+            <select name="clothes not worn" id="clothes not worn" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Less than 25%">Less than 25%</option>
+              <option value="50%">50%</option>
+              <option value="75%">75%</option>
+              <option value="More than 75%">More than 75%</option>
+            </select>
+          </div>
 
-                <div class="form-group">
-                    <p>1. All my garbage from today could fit into a</p>
-                    <select name="garbage from today" id="garbage from today" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Shoebox">Shoebox</option>
-                        <option value="Large pail">Large pail</option>
-                        <option value="Garbage can">Garbage can</option>
-                        <option value="No garbage created today!">No garbage created today!</option>
-                    </select>
-                </div>
+          <div class="form-group">
+            <p>8. I have ____ pair/pairs of shoes.</p>
+            <select name="pairs of shoes" id="pairs of shoes" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="1">1</option>
+              <option value="2 to 3">2 to 3</option>
+              <option value="4 to 6">4 to 6</option>
+              <option value="7 or more">7 or more</option>
+            </select>
+          </div>
 
-                <div class="form-group">
-                    <p>2. I reuse items rather than throw them out.</p>
-                    <select name="reuse" id="reuse" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-            
-                <div class="form-group">
-                    <p>3. I repair items rather than throw them out.</p>
-                    <select name="repair items" id="repair items" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
 
-                <div class="form-group">
-                    <p>4. I recycle all my paper, cans, glass, and plastic.</p>
-                    <select name="recycle items" id="recycle items" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
+        <!--Clothing Task Ends Here-->
 
-                <div class="form-group">
-                    <p>5. I avoid disposable items as often as possible.</p>
-                    <select name="avoid disposable items" id="avoid disposable items" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
+        <div class="step step-8">
 
-                <div class="form-group">
-                    <p>6. I use rechargeable batteries whenever I can. </p>
-                    <select name="use rechargeable batteries" id="use rechargeable batteries" required="required">
-                        <option disabled selected value>Please Select</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
+          <h1 id="title" class="text-center"><b>Use of Stuff</b></h1>
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
+          <div class="form-group">
+            <p>1. All my garbage from today could fit into a</p>
+            <select name="garbage from today" id="garbage from today" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Shoebox">Shoebox</option>
+              <option value="Large pail">Large pail</option>
+              <option value="Garbage can">Garbage can</option>
+              <option value="No garbage created today!">No garbage created today!</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>2. I reuse items rather than throw them out.</p>
+            <select name="reuse" id="reuse" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. I repair items rather than throw them out.</p>
+            <select name="repair items" id="repair items" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>4. I recycle all my paper, cans, glass, and plastic.</p>
+            <select name="recycle items" id="recycle items" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>5. I avoid disposable items as often as possible.</p>
+            <select name="avoid disposable items" id="avoid disposable items" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>6. I use rechargeable batteries whenever I can. </p>
+            <select name="use rechargeable batteries" id="use rechargeable batteries" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!--Use of Stuff Task Ends Here-->
+
+        <div class="step step-9">
+
+          <h1 id="title" class="text-center"><b>Fun</b></h1>
+
+          <div class="form-group">
+            <p>1. For typical play, the land converted into fields, rinks, pools, gyms, ski slopes, parking lots, etc.,
+              added together occupy:</p>
+            <select name="total land mass" id="total land mass" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Nothing">Nothing</option>
+              <option value="Less than 1 hectare / 2½ acres">Less than 1 hectare / 2½ acres</option>
+              <option value="1 to 2 hectares / 2½ to 5 acres">1 to 2 hectares / 2½ to 5 acres</option>
+              <option value="2 or more hectares / 5 or more acres">2 or more hectares / 5 or more acres</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>2. On a typical day, I use the TV or computer:</p>
+            <select name="TV or computer" id="TV or computer" class="form-control" required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="Not at all">Not at all</option>
+              <option value="Less than 1 hour">Less than 1 hour</option>
+              <option value="More than 1 hour">More than 1 hour</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>3. How much equipment is needed for typical activities?</p>
+            <select name="equipment for typical activities" id="equipment for typical activities" class="form-control"
+              required="required">
+              <option disabled selected value>Please Select</option>
+              <option value="None">None</option>
+              <option value="Very little">Very little</option>
+              <option value="Some">Some</option>
+              <option value="A lot">A lot</option>
+            </select>
+          </div>
+
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <!--Fun Task Ends Here-->
+        <!--
           <div class="step step-10">
-            
-            <div class="navBar">
-  <div class="listwrap">
-<ul>
-  <li>
-    <a href="indexHome.html">Home</a>
-  </li> 
-  <li>
-    <a href="index.html">Background Questionnaire</a>
-  </li> 
-  <li>
-    <a href="Footprintcalculator.html">Footprint Calculator</a>
-  </li>
-  <li>
-    <a href="contactme.html">Contact Me</a>
-  </li>
-</ul>
-</div>
-</div>
-            <h1 id="title" class="text-center"><b>Fun</b></h1>
-            <p id="description" class="description text-center">This is the final section of the survey. 
-                <br> this part, you will see 3 multiple-choice questions regarding entertainment. 
-                <br>Please choose the option that fits best to your case. 
-                </p>
-
-                 <div class="form-group">
-        <p>1. For typical play, the land converted into fields, rinks, pools, gyms, ski slopes, parking lots, etc., added together occupy:</p>
-        <select name="total land mass" id="total land mass" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="Nothing">Nothing</option>
-            <option value="Less than 1 hectare / 2½ acres">Less than 1 hectare / 2½ acres</option>
-            <option value="1 to 2 hectares / 2½ to 5 acres">1 to 2 hectares / 2½ to 5 acres</option>
-            <option value="2 or more hectares / 5 or more acres">2 or more hectares / 5 or more acres</option>
-        </select> 
-        </div>
-
-        <div class="form-group">
-        <p>2. On a typical day, I use the TV or computer:</p>
-        <select name="TV or computer" id="TV or computer" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="Not at all">Not at all</option>
-            <option value="Less than 1 hour">Less than 1 hour</option>
-            <option value="More than 1 hour">More than 1 hour</option>
-        </select>
-    </div>
-
-    <div class="form-group">
-        <p>3. How much equipment is needed for typical activities?</p>
-        <select name="equipmentfortypicalactivities" id="equipmentfortypicalactivities" required="required">
-            <option disabled selected value>Please Select</option>
-            <option value="None">None</option>
-            <option value="Very little">Very little</option>
-            <option value="Some">Some</option>
-            <option value="A lot">A lot</option>
-        </select>
-    </div>
-
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Submit</button>
-            </div>
-          
-          <div class="step step-11">
-
-            <div class="navBar">
-                <div class="listwrap">
-              <ul>
-                <li>
-                  <a href="indexHome.html">Home</a>
-                </li> 
-                <li>
-                  <a href="index.html">Background Questionnaire</a>
-                </li>      
-                <li>
-                  <a href="Footprintcalculator.html">Footprint Calculator</a>
-                </li>
-                <li>
-                  <a href="contactme.html">Contact Me</a>
-                </li>
-              </ul>
-              </div>
-              </div>
 
                 <p id="description" class="description text-center">Thank you for participating in the study!
-                <br>
-                if you would like to know your ecological footprint, click <b><a href="Footprintcalculator.html" color>here.</a></b> 
-                  Otherwise click on the exit button to complete your submission.</p>
+                -->
+        <div class="step step-10">
 
-                <button type="button" class="previous-btn">Prev</button>
-                <button type="submit" id="submit" class="submit-btn"> Exit</button>
-            </div>
+          <div class="form-group">
+            <label for="tests">Thank you for participating in the study!</label>
+            <input type="text" id="tests" class="form-control" name="tests">
+          </div>
 
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="submit" id="submit" class="submit-btn"> Submit</button>
+        </div>
 
-        </form>
+        <!-- Circles which indicates the steps of the form:
+        <div style="text-align:margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      -->
+
+      </form>
     </div>
 
-        </form>
-    </div>
 
     <script src="bootstrap.js"></script>
-</section>
+  </section>
 
 </body>
+
 </html>
