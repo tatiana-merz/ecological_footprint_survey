@@ -76,7 +76,7 @@ function handlePostRequest(req, res) {
 }
 
 function writeToCsv(formData) {
-    let dataString = `${formData.name},${formData.number},${formData.email},${formData.role},${formData.comments},${formData.shower},${formData.flushes},${formData.brush},${formData.wash},${formData.savingtoilets},${formData.showerheads},${formData.dishwasher}\n`;
+    let dataString = `${formData.name},${formData.number},${formData.email},${formData.role},${formData.comments},${formData.shower},${formData.flushes},${formData.brush},${formData.wash},${formData.savingtoilets},${formData.showerheads},${formData.dishwasher},${formData.beef},${formData.chicken},${formData.wildfish},${formData.eggs},${formData.milk_dairy},${formData.fruit},${formData.vegetables},${formData.grains},${formData.food_grown_locally},${formData.organic},${formData.compost},${formData.water_saving_toilets}\n`;
     fs.appendFileSync('Data/responses.csv', dataString);
 }
 
