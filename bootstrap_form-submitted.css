@@ -1,0 +1,22 @@
+body {
+  position: relative; /* usually the parent, in this case the body element, has position relative so that the absolute positioned child is positioned relative to it */
+  height: 100vh; /* 100% of the viewport height */
+  margin: 0; /* recommended */
+  background-image: linear-gradient(
+  115deg,
+  rgba(58, 58, 158, 0.8),
+  rgba(149, 206, 136, 0.7)
+  ),
+  url(https://en.reset.org/files/imagecache/sc_832x468/2016/05/18/footprints.jpg);
+  background-position: center;
+  color: #133a26;
+}
+
+h1 {
+ position: absolute; /* taken out of the normal flow of the document */
+ top: 50%; /* moved down by 50% of the screen height */
+ transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+ width: 100%; /* needs to be defined to keep the default block behavior */
+ text-align: center;
+ margin: 0; /* again, for perfect center */
+}
