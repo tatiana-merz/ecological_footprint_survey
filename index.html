@@ -8,6 +8,7 @@
 
 </head>
 
+<nav class="navbar-form navbar-center">
 <div class="navBar">
   <div class="listwrap">
     <ul>
@@ -18,27 +19,24 @@
         <a href="index.html">Footprint Survey</a>
       </li>
       <li>
-        <a href="Feedback.html">Feedback</a>
-      </li>
-      <li>
         <a href="contact.html">Contact Us</a>
       </li>
 
     </ul>
   </div>
 </div>
+</nav>
 
 <body>
 
-
-
 <header class="header">
+  <br/><br/><br/><br/>
   <h1 id="title" class="text-center">Footprint Survey</h1>
+  <br/>
   <p id="description" class="description text-center"><b>Kindly fill out the form with the correct information and
     then proceed
   </b></p>
 </header>
-
 
 <section>
   <div class="container">
@@ -71,17 +69,17 @@
 
         <div class="form-group">
           <label id="email-label" for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="required" />
+          <input type="Email" name="Email" id="Email" class="form-control" placeholder="Enter your Email" required="required" />
         </div>
 
         <div class="form-group">
           <p>Which option best describes your current role?</p>
           <select id="dropdown" name="role" class="form-control" required="required">
             <option disabled selected value>Select current role</option>
-            <option value="student">Student</option>
-            <option value="full time job">Full Time Job</option>
-            <option value="part time job">Part Time Job</option>
-            <option value="other">Other</option>
+            <option value="Student">Student</option>
+            <option value="Full time job">Full Time Job</option>
+            <option value="Part time job">Part Time Job</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 
@@ -116,7 +114,7 @@
           <p>2. I flush the toilet:</p>
           <select name="flush" id="flush" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="everytime">Every time I use it</option>
+            <option value="Everytime">Every time I use it</option>
             <option value="Sometimes">Sometimes</option>
           </select>
         </div>
@@ -125,8 +123,8 @@
           <p>3. When I brush my teeth:</p>
           <select name="brush" id="brush" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="let water run">I let the water run.</option>
-            <option value="don't let water run">I don't let the water run.</option>
+            <option value="I let water run">I let the water run</option>
+            <option value="I don't let water run">I don't let the water run</option>
           </select>
         </div>
 
@@ -149,7 +147,7 @@
         </div>
 
         <div class="form-group">
-          <p>6. I use low-flow showerheads.</p>
+          <p>6. I use low-flow showerheads</p>
           <select name="showerheads" id="showerheads" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -158,7 +156,7 @@
         </div>
 
         <div class="form-group">
-          <p>7. I use a dishwasher on a typical day.</p>
+          <p>7. I use a dishwasher on a typical day</p>
           <select name="dishwasher" id="dishwasher" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -177,38 +175,38 @@
 
         <div class="form-group">
           <p>1. On a typical day, I eat:</p>
-          <input type="checkbox" name="beef" value="daily meal 1"> Beef <br>
-          <input type="checkbox" name="chicken" value="daily meal 2"> Chicken <br>
-          <input type="checkbox" name="wildfish" value="daily meal 3">Wild fish<br>
-          <input type="checkbox" name="eggs" value="daily meal 4">Eggs<br>
-          <input type="checkbox" name="milk_dairy" value="daily meal 5">Milk/dairy<br>
-          <input type="checkbox" name="fruit" value="daily meal 6">Fruit<br>
-          <input type="checkbox" name="vegetables" value="daily meal 7">Vegetables<br>
-          <input type="checkbox" name="grains" value="daily meal 8">Grains: bread, cereal, rice<br>
+          <input type="checkbox" name="Beef" value="Beef"> Beef <br>
+          <input type="checkbox" name="Chicken" value="Chicken"> Chicken <br>
+          <input type="checkbox" name="Wildfish" value="Wildfish">Wild fish<br>
+          <input type="checkbox" name="Eggs" value="Eggs">Eggs<br>
+          <input type="checkbox" name="Milk_dairy" value="Milk_dairy">Milk/dairy<br>
+          <input type="checkbox" name="Fruit" value="Fruit">Fruit<br>
+          <input type="checkbox" name="Vegetables" value="Vegetables">Vegetables<br>
+          <input type="checkbox" name="Grains" value="Grains">Grains: bread, cereal, rice<br>
         </div>
 
         <div class="form-group">
-          <p>2. ____ of my food is grown locally.</p>
+          <p>2. ____ of my food is grown locally</p>
           <select name="food_grown_locally" id="food grown locally" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="all">All</option>
-            <option value="some">Some</option>
-            <option value="none">None</option>
+            <option value="All">All</option>
+            <option value="Some">Some</option>
+            <option value="None">None</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>3. ____ of my food is organic.</p>
+          <p>3. ____ of my food is organic</p>
           <select name="organic" id="organic" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="all">All</option>
-            <option value="some">Some</option>
-            <option value="none">None</option>
+            <option value="All">All</option>
+            <option value="Some">Some</option>
+            <option value="None">None</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>4. I compost my fruit/vegetable scraps and peels.</p>
+          <p>4. I compost my fruit/vegetable scraps and peels</p>
           <select name="compost" id="compost fruit/vegetable" class="form-control"
                   required="required">
             <option disabled selected value>Please Select</option>
@@ -218,22 +216,22 @@
         </div>
 
         <div class="form-group">
-          <p>5. ____ of my food is processed.</p>
+          <p>5. ____ of my food is processed</p>
           <select name="water_saving_toilets" id="water_saving_toilets" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="all">All</option>
-            <option value="some">Some</option>
-            <option value="none">None</option>
+            <option value="All">All</option>
+            <option value="Some">Some</option>
+            <option value="None">None</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>6. ____ of my food has packaging.</p>
+          <p>6. ____ of my food has packaging</p>
           <select name="packaging" id="packaging" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="all">All</option>
-            <option value="some">Some</option>
-            <option value="none">None</option>
+            <option value="All">All</option>
+            <option value="Some">Some</option>
+            <option value="None">None</option>
           </select>
         </div>
 
@@ -241,10 +239,10 @@
           <p>7. On a typical day, I waste:</p>
           <select name="foodwaste" id="foodwaste" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="none of my food">None of my food</option>
-            <option value="one-fourth of my food">One-fourth of my food</option>
-            <option value="one-third of my food">One-third of my food</option>
-            <option value="half of my food">Half of my food</option>
+            <option value="None of my food">None of my food</option>
+            <option value="One-fourth of my food">One-fourth of my food</option>
+            <option value="One-third of my food">One-third of my food</option>
+            <option value="Half of my food">Half of my food</option>
           </select>
         </div>
 
@@ -259,17 +257,17 @@
 
         <div class="form-group">
           <p>1. On a typical day, I travel by:</p>
-          <input type="checkbox" name="foot" value="daily transport 1"> Foot<br>
-          <input type="checkbox" name="bike" value="daily transport 2"> Bike<br>
-          <input type="checkbox" name="public_transit" value="daily transport 3">Public transit<br>
-          <input type="checkbox" name="private_vehicle" value="daily transport 4">Private vehicle<br>
+          <input type="checkbox" name="Foot" value="Foot"> Foot<br>
+          <input type="checkbox" name="Bike" value="Bike"> Bike<br>
+          <input type="checkbox" name="Public_transit" value="Public transit">Public transit<br>
+          <input type="checkbox" name="Private_vehicle" value="Private vehicle">Private vehicle<br>
         </div>
 
         <div class="form-group">
-          <p>2. Our vehicle’s fuel efficiency is ____ liters/100 kilometers(gallons/60 miles).</p>
+          <p>2. Our vehicle’s fuel efficiency is ____ liters/100 kilometers(gallons/60 miles)</p>
           <select name="fuel_efficiency" id="fuel efficiency" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="less than 6 liters / 2 gallons">less than 6 liters / 2 gallons</option>
+            <option value="Less than 6 liters / 2 gallons">less than 6 liters / 2 gallons</option>
             <option value="6–9 liters / 2–2½ gallons">6–9 liters / 2–2½ gallons</option>
             <option value="10–13 liters / 3–3½ gallons">10–13 liters / 3–3½ gallons</option>
             <option value="More than 13 liters / 3½ gallons">6–9 liters / 2–2½ gallons</option>
@@ -282,7 +280,7 @@
           <select name="vehicle_time" id="vehicle time" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="No time">No time</option>
-            <option value="less than half an hour">Less than half an hour</option>
+            <option value="Less than half an hour">Less than half an hour</option>
             <option value="Half an hour to 1 hour">Half an hour to 1 hour</option>
             <option value="More than 1 hour">More than 1 hour</option>
           </select>
@@ -292,7 +290,7 @@
           <p>4. How big is the car in which I travel on a typical day?</p>
           <select name="size_of_car" id="size of car" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="Nocar">No car</option>
+            <option value="No car">No car</option>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
             <option value="Large">Large (SUV)</option>
@@ -334,7 +332,7 @@
         <h1 id="title" class="text-center"><b>Shelter</b></h1>
 
         <div class="form-group">
-          <p>1. Number of rooms per person (divide number of rooms by number of people living at home).</p>
+          <p>1. Number of rooms per person (divide number of rooms by number of people living at home)</p>
           <select name="rooms_per_person" id="rooms per person" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Fewer than 2 rooms per person">Fewer than 2 rooms per person</option>
@@ -346,20 +344,20 @@
         </div>
 
         <div class="form-group">
-          <p>2. We share our home with nonfamily members.</p>
+          <p>2. We share our home with nonfamily members</p>
           <select name="home_sharing" id="home-sharing" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>3. We own a second, or vacation home that is often empty.</p>
+          <p>3. We own a second, or vacation home that is often empty</p>
           <select name="second_home" id="second home" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
             <option value="We own / use it with others">We own/use it with others</option>
           </select>
         </div>
@@ -387,44 +385,44 @@
         </div>
 
         <div class="form-group">
-          <p>2. We dry clothes outdoors or on an indoor rack.</p>
+          <p>2. We dry clothes outdoors or on an indoor rack</p>
           <select name="dry_clothes" id="dry clothes" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="always">Always</option>
+            <option value="Always">Always</option>
             <option value="Sometimes">Sometimes</option>
             <option value="Sometimes">Never</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>3. We use an energy-efficient refrigerator.</p>
+          <p>3. We use an energy-efficient refrigerator</p>
           <select name="energy_efficient_refrigerator" id="energy-efficient refrigerator" class="form-control"
                   required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-            <option value="not applicable">Not applicable</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not applicable">Not applicable</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>4. We use compact fluorescent light bulbs.</p>
+          <p>4. We use compact fluorescent light bulbs</p>
           <select name="fluorescent_light_bulbs" id="fluorescent light bulbs" class="form-control"
                   required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
-            <option value="not applicable">Not applicable</option>
+            <option value="Not applicable">Not applicable</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>5. I turn off lights, computer, and television when they’re not in use.</p>
+          <p>5. I turn off lights, computer, and television when they’re not in use</p>
           <select name="turn_off_lights" id="turn off lights" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
-            <option value="not applicable">Not applicable</option>
+            <option value="Not applicable">Not applicable</option>
           </select>
         </div>
 
@@ -432,10 +430,10 @@
           <p>6. To cool off, I use:</p>
           <select name="to_cool_off" id="To cool off" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="Airconditioning: car">Air conditioning: car</option>
-            <option value="Airconditioning: home">Air conditioning: home</option>
+            <option value="Air conditioning: car">Air conditioning: car</option>
+            <option value="Air conditioning: home">Air conditioning: home</option>
             <option value="Electric fan">Electric fan</option>
-            <option value="nothing">Nothing</option>
+            <option value="Nothing">Nothing</option>
           </select>
         </div>
 
@@ -462,26 +460,26 @@
         <h1 id="title" class="text-center"><b>Clothing</b></h1>
 
         <div class="form-group">
-          <p>1. I change my outfit every day and put it in the laundry.</p>
+          <p>1. I change my outfit every day and put it in the laundry</p>
           <select name="change_of_outfit" id="change of outfit" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>2. I am wearing clothes that have been mended or fixed. </p>
+          <p>2. I am wearing clothes that have been mended or fixed</p>
           <select name="mended_or_fixed_clothes" id="mended or fixed clothes" class="form-control"
                   required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>3. One-fourth of my clothes are handmade or secondhand.</p>
+          <p>3. One-fourth of my clothes are handmade or secondhand</p>
           <select name="handmade_or_secondhand" id="handmade or secondhand" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -490,7 +488,7 @@
         </div>
 
         <div class="form-group">
-          <p>4. Most of my clothes are purchased new each year.</p>
+          <p>4. Most of my clothes are purchased new each year</p>
           <select name="purchased_new_each_year" id="purchased new each year" class="form-control"
                   required="required">
             <option disabled selected value>Please Select</option>
@@ -500,7 +498,7 @@
         </div>
 
         <div class="form-group">
-          <p>5. I give the local thrift store clothes that I no longer wear.</p>
+          <p>5. I give the local thrift store clothes that I no longer wear</p>
           <select name="give_clothes_out" id="give clothes out" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -509,7 +507,7 @@
         </div>
 
         <div class="form-group">
-          <p>6. I buy hemp instead of cotton shirts when I can.</p>
+          <p>6. I buy hemp instead of cotton shirts when I can</p>
           <select name="buy_hemp" id="buy hemp" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -518,7 +516,7 @@
         </div>
 
         <div class="form-group">
-          <p>7. I never wear ___ % of the clothes in my cupboard.</p>
+          <p>7. I never wear ___ % of the clothes in my cupboard</p>
           <select name="clothes_not_worn" id="clothes not worn" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Less than 25%">Less than 25%</option>
@@ -529,7 +527,7 @@
         </div>
 
         <div class="form-group">
-          <p>8. I have ____ pair/pairs of shoes.</p>
+          <p>8. I have ____ pair/pairs of shoes</p>
           <select name="pairs_of_shoes" id="pairs of shoes" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="1">1</option>
@@ -561,16 +559,16 @@
         </div>
 
         <div class="form-group">
-          <p>2. I reuse items rather than throw them out.</p>
+          <p>2. I reuse items rather than throw them out</p>
           <select name="reuse" id="reuse" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
           </select>
         </div>
 
         <div class="form-group">
-          <p>3. I repair items rather than throw them out.</p>
+          <p>3. I repair items rather than throw them out</p>
           <select name="repair_items" id="repair items" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -579,7 +577,7 @@
         </div>
 
         <div class="form-group">
-          <p>4. I recycle all my paper, cans, glass, and plastic.</p>
+          <p>4. I recycle all my paper, cans, glass, and plastic</p>
           <select name="recycle_items" id="recycle items" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>
@@ -588,7 +586,7 @@
         </div>
 
         <div class="form-group">
-          <p>5. I avoid disposable items as often as possible.</p>
+          <p>5. I avoid disposable items as often as possible</p>
           <select name="avoid_disposable_items" id="avoid disposable items" class="form-control" required="required">
             <option disabled selected value>Please Select</option>
             <option value="Yes">Yes</option>

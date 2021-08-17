@@ -43,6 +43,13 @@ body::before {
     background-position: center;
 }
 
+.navbar-center
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
 
 section {
     min-height: 100vh;
