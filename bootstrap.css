@@ -16,7 +16,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.4;
     color: var(--color-darkblue);
     margin: 0;
@@ -77,17 +77,6 @@ section {
     display: block;
 }
 
-.header {
-    padding: 0 0.625rem;
-    margin-bottom: 1.500rem;
-    color: #352b2b;
-}
-
-.description {
-    font-weight: 200;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
 .clue {
     margin-left: 0.25rem;
     font-size: 0.9rem;
@@ -130,7 +119,7 @@ section {
 .input-radio,
 .input-checkbox {
     display: inline-block;
-    margin-right: 0.625rem;
+    margin-right: 0.950rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
 }
@@ -144,10 +133,10 @@ section {
 
 
 .navBar {
-    background-color: darkgreen;
-    background-size: 9em;
+    background-color: rgba(23, 107, 37, 0.7);
+    background-size: 10em;
     overflow: auto;
-    height: 70px;
+    height: 80px;
 }
 .navBar ul {
     list-style-type: none;
@@ -161,14 +150,14 @@ section {
 }
 
 .navBar ul li a {
-    font-size: 15px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #e5dede;
     text-decoration: none;
 }
 
 .navBar ul li a:hover {
-    font-size: 15px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(161, 221, 22);
     text-decoration: underline;
