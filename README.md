@@ -3,7 +3,7 @@ This project aims to study how big the footprint size of the Eberhard Karls Univ
 
 In the following part, we walk you through the use of the web application for the data collection, which is conducted via the metric, survey.
 ## Steps to Use the Platform
-First of all, the participants should go to [this link](http://18.185.61.4:portNum) to go to our web application, Clicking on this link you will be directed to our **Home** page where you can acknowledge yourself about the project under the titles of +Goal and **Method**. On the home page, you will also see another navigation bar which is **Footprint Survey** If you are volunteer to take the study, click on this bar.
+First of all, the participants should go to [this link](http://18.185.61.4:portNum) to go to our web application, Clicking on this link you will be directed to our **Home** page where you can acknowledge yourself about the project under the titles of **Goal** and **Method**. On the home page, you will also see another navigation bar which is **Footprint Survey** If you are volunteer to take the study, click on this bar.
 
 After clicking, you will be directed to **Footprint Survey** whose first section is **Background Questionnaire**, which is considered as a consent form. After you respond to these questions, please click on the **Next** button via which you will be starting with the actual survey. Here you will be answering questions related to **Water Use**. You choose between the options via the drop-down section for the answers of yours. You can choose only one option as the questions in this section are multiple-choice type.
 
