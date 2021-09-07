@@ -21,7 +21,7 @@ You will be directed to another page where you will see our thanking message, an
 
 Notice that, once you click on the **Footprint Survey* to take the survey, on the top of the page, you will always see the navigation bars which are **Home**, **Footprint Survey** and **Contact Us**.
 
-We thank you for your interest in our project. :innocent:
+We thank you for your interest in our project. :blush:
 
 
 
