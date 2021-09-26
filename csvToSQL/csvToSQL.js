@@ -6,10 +6,10 @@ var wstream = fs.createWriteStream('Responses.sql');
 
 var CSV2SQL = require('csv2sql-lite');
 var csv2sql = CSV2SQL({
-    tableName: 'data',
+    tableName: 'database',
     dbName: 'Responses',
     separator: ',',
-    lineSeparator: ','
+    lineSeparator: '\n'
 });
 
 rstream.pipe(csv2sql).pipe(wstream);
