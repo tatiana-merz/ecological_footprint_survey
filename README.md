@@ -7,7 +7,8 @@ First of all, to run the system, one should clone the repository and in the fold
 
 To go live, you can host the application on a remote server and when it is on, through the link provided, the web application can be visible to others. To access participants' responses, kindly open the responses.csv file in the "Data" folder.
 
-Participants can be directed to use the platform through the instructions below:
+**Participants can be directed to use the platform through the instructions below:**
+
 When you go to the website, you will find yourself in our **Home** page which is in form of a consent form where you can be acquainted with the project and asked for your consent to participate in the study. If you would like to take the survey, you can click on "here" to continue to the survey.
 After clicking, you will be directed to **Footprint Survey** whose first section is **Background Questionnaire**, where we ask about some demographical questions such as age and gender. After you respond to these questions, please click on the **Next** button via which you will be starting with the actual survey. Here you will be answering questions related to **Water Use**. You choose between the options via the drop-down section for the answers of yours. You can choose only one option as the questions in this section are multiple-choice type.
 
