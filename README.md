@@ -18,7 +18,7 @@ Finally, you will be in the last section of the survey, and in this final sectio
 
 You will be directed to another page where you will see our thanking message, and a text box. You can either click on **Submit** button directly, or if you would like to say something about the survey, you can type your ideas in that textbox and then submit the form. If there is anything you want to change in your data, you can always go back to the previous sections via the **Prev** button **before submitting**. It is important to note **each question should be answered to be able to submit the survey**.
 
-Notice also that once you click on the **Footprint Survey* to take the survey, on the top of the page, you will always see the navigation bars which are **Home**, **Footprint Survey** and **Contact Us**.
+Notice also that once you click on the **Footprint Survey** to take the survey, on the top of the page, you will always see the navigation bars which are **Home**, **Footprint Survey** and **Contact Us**.
 
 We thank you for your interest in our project. :innocent:
 
