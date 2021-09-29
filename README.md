@@ -3,7 +3,7 @@ This project aims to study how big the footprint size of the Eberhard Karls Univ
 
 In the following part, we walk you through the use of the web application for data collection, which is conducted via the survey.
 ## Steps to Use the Platform
-First of all, to run the system, one should clone the repository and in the folder, open a local shell and insert the command "node start-server.js" (if you already have node.js installed). This would start the web application. Our port is 3000, so in the browser, typing "localhost:3000" would prompt the running of the web application on your local browser. 
+First of all, to run the system, one should clone the repository and in the folder, open a local shell and insert the command "node start-server.js" (if you already have Node.js installed). This would start the web application. Our port is 3000, so in the browser, typing "localhost:3000" would prompt the running of the web application on your local browser. 
 
 To go live, you can host the application on a remote server and when it is on, through the link provided, the web application can be visible to others. To access participants' responses, kindly open the responses.csv file in the "Data" folder.
 
