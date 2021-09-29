@@ -5,7 +5,7 @@ In the following part, we walk you through the use of the web application for da
 ## Steps to Use the Platform
 First of all, to run the system, one should clone the repository and in the folder, open a local shell and insert the command "node start-server.js" (if you already have Node.js installed). This would start the web application. Our port is 3000, so in the browser, typing "localhost:3000" would prompt the running of the web application on your local browser. 
 
-To go live, you can host the application on a remote server and when it is on, through the link provided, the web application can be visible to others. To access participants' responses, kindly open the responses.csv file in the "Data" folder.
+To go live, you can host the application on a remote server and when it is on, through the link provided, the web application can be visible to others. 
 
 When you go to the website, you will find yourself in our **Home** page which is in form of a consent form where you can be acquainted with the project and asked for your consent to participate in the study. If you would like to take the survey, you can click on "here" to continue to the survey.
 After clicking, you will be directed to **Footprint Survey** whose first section is **Background Questionnaire**, where we ask about some demographical questions such as age and gender. After you respond to these questions, please click on the **Next** button via which you will be starting with the actual survey. Here you will be answering questions related to **Water Use**. You choose between the options via the drop-down section for the answers of yours. You can choose only one option as the questions in this section are multiple-choice type.
@@ -23,6 +23,8 @@ Finally, you will be in the last section of the survey, and in this final sectio
 You will be directed to another page where you will see our thanking message, and a text box. You can either click on **Submit** button directly, or if you would like to say something about the survey, you can type your ideas in that textbox and then submit the form. If there is anything you want to change in your data, you can always go back to the previous sections via the **Prev** button **before submitting**. It is important to note **each question should be answered to be able to submit the survey**.
 
 Notice also that once you click on the **Footprint Survey** to take the survey, on the top of the page, you will always see the navigation bars which are **Home**, **Footprint Survey** and **Contact Us**.
+
+To access participants' responses, kindly open the responses.csv file in the "Data" folder.
 
 We thank you for your interest in our project. :innocent:
 
